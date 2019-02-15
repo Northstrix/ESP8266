@@ -31,7 +31,7 @@ const char W_SSID[] = "Your SSID(for example ASUS RT-N10)";
 const char W_PASS[] = "Your password(for example 123456)";
 String     W_URL    = "http://api.openweathermap.org/data/2.5/weather";
 String     W_API    = "Your weather key, you can get it in https://openweathermap.org/";
-String     W_ID     = "2643743"; //Weather id for the London, you can change it for your
+String     W_ID     = "2643743"; //Weather id for the London, you can change it for your city
 String     W_NAME   = "Weather in London: "; //You can change this string
 WiFiUDP udp;
 const int NTP_PACKET_SIZE = 48; 
