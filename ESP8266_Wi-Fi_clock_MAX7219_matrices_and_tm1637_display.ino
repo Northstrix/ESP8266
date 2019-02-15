@@ -38,7 +38,7 @@ const int NTP_PACKET_SIZE = 48;
 byte packetBuffer[ NTP_PACKET_SIZE]; 
 const char NTP_SERVER[]   = "0.ru.pool.ntp.org";          
 int TZ                    = 0;//timesone for the London according UTC
-uint32_t NTP_TIMEOUT      = 600000; //10 минут
+uint32_t NTP_TIMEOUT      = 600000;
 int pinCS = 16;
 int numberOfHorizontalDisplays = 4;
 int numberOfVerticalDisplays   = 2;
@@ -388,9 +388,7 @@ time_t GetNTP(void) {
 
 unsigned long sendNTPpacket(IPAddress& address)
 {
-// Очистка буфера в 0
   memset(packetBuffer, 0, NTP_PACKET_SIZE);
-// Формируем строку зыпроса NTP сервера
   packetBuffer[0] = 0b11100011;
   packetBuffer[1] = 0;
   packetBuffer[2] = 6;
