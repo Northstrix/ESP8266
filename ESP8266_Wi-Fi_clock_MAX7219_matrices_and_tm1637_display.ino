@@ -37,7 +37,7 @@ WiFiUDP udp;
 const int NTP_PACKET_SIZE = 48; 
 byte packetBuffer[ NTP_PACKET_SIZE]; 
 const char NTP_SERVER[]   = "0.ru.pool.ntp.org";          
-int TZ                    = 0;//timesone for the London according UTC
+int TZ                    = 0;//timezone for the London according UTC
 uint32_t NTP_TIMEOUT      = 600000;
 int pinCS = 16;
 int numberOfHorizontalDisplays = 4;
